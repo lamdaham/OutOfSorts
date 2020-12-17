@@ -22,4 +22,22 @@ public class Sorts{
 	  	}
 	 }
   }
+
+  public static void selectionSort(int[] data){
+  	for (int i = 0; i < data.length-1; i++) {
+        int least = i;
+        for (int p = i; p < data.length; p++) {
+            if (data[p] < data[least]) {
+                least = p;
+            }
+        }
+        int old = data[i];
+        data[i] = data[least];
+        data[least] = old;
+    }
+  }
+
+  public static void insertionSort(int[] data){
+
+  }
 }
